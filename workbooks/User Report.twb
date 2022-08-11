@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' version='18.1' xml:base='http://localhost:8279' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:8288/workbooks/UserReport?rev=1.0' id='UserReport' path='/workbooks' revision='1.1' />
+  <preferences />
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Custom SQL Query (workgroup)' inline='true' name='federated.072gp4g0ny4f7a1fy60171824sbi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.1bwlo3d1nwvfr119j1ypa0qbbtwi'>
+            <connection authentication='username-password' class='postgres' dbname='workgroup' one-time-sql='' port='8060' server='localhost' sslmode='require' username='readonly' workgroup-auth-mode='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.1bwlo3d1nwvfr119j1ypa0qbbtwi' name='Custom SQL Query' type='text'>select &apos;Fuse&apos; as &quot;Landscape&quot;, _users.name as &quot;Username&quot;, _users.friendly_name, users. created_at, _users.licensing_role_name from _users inner join users on _users.id=users.id</_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='postgres.1bwlo3d1nwvfr119j1ypa0qbbtwi' name='Custom SQL Query' type='text'>select &apos;Fuse&apos; as &quot;Landscape&quot;, _users.name as &quot;Username&quot;, _users.friendly_name, users. created_at, _users.licensing_role_name from _users inner join users on _users.id=users.id</_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Landscape</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Landscape]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>Landscape</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_users_C74238A14C5D4784B027E92512DE9E67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Username]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>Username</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_users_C74238A14C5D4784B027E92512DE9E67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>friendly_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[friendly_name]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>friendly_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_users_C74238A14C5D4784B027E92512DE9E67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[created_at]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_users_C74238A14C5D4784B027E92512DE9E67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>licensing_role_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[licensing_role_name]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>licensing_role_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_users_C74238A14C5D4784B027E92512DE9E67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='_users' datatype='table' name='[__tableau_internal_object_id__].[_users_C74238A14C5D4784B027E92512DE9E67]' role='measure' type='quantitative' />
+      <column datatype='string' datatype-customized='true' name='[created_at]' role='dimension' type='nominal' />
+      <column caption='Friendly Name' datatype='string' name='[friendly_name]' role='dimension' type='nominal' />
+      <column caption='Licensing Role Name' datatype='string' name='[licensing_role_name]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='_users' id='_users_C74238A14C5D4784B027E92512DE9E67'>
+            <properties context=''>
+              <relation connection='postgres.1bwlo3d1nwvfr119j1ypa0qbbtwi' name='Custom SQL Query' type='text'>select &apos;Fuse&apos; as &quot;Landscape&quot;, _users.name as &quot;Username&quot;, _users.friendly_name, users. created_at, _users.licensing_role_name from _users inner join users on _users.id=users.id</relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Users'>
+      <repository-location derived-from='http://localhost:8288/workbooks/UserReport/Users?rev=' id='Users' path='/workbooks/UserReport' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (workgroup)' name='federated.072gp4g0ny4f7a1fy60171824sbi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.072gp4g0ny4f7a1fy60171824sbi'>
+            <column datatype='string' name='[Landscape]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Username]' role='dimension' type='nominal' />
+            <column datatype='string' datatype-customized='true' name='[created_at]' role='dimension' type='nominal' />
+            <column caption='Friendly Name' datatype='string' name='[friendly_name]' role='dimension' type='nominal' />
+            <column caption='Licensing Role Name' datatype='string' name='[licensing_role_name]' role='dimension' type='nominal' />
+            <column-instance column='[Landscape]' derivation='None' name='[none:Landscape:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Username]' derivation='None' name='[none:Username:nk]' pivot='key' type='nominal' />
+            <column-instance column='[created_at]' derivation='None' name='[none:created_at:nk]' pivot='key' type='nominal' />
+            <column-instance column='[friendly_name]' derivation='None' name='[none:friendly_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[licensing_role_name]' derivation='None' name='[none:licensing_role_name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.072gp4g0ny4f7a1fy60171824sbi].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.072gp4g0ny4f7a1fy60171824sbi].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+          </pane>
+        </panes>
+        <rows>([federated.072gp4g0ny4f7a1fy60171824sbi].[none:Landscape:nk] / ([federated.072gp4g0ny4f7a1fy60171824sbi].[none:Username:nk] / ([federated.072gp4g0ny4f7a1fy60171824sbi].[none:created_at:nk] / ([federated.072gp4g0ny4f7a1fy60171824sbi].[none:friendly_name:nk] / [federated.072gp4g0ny4f7a1fy60171824sbi].[none:licensing_role_name:nk]))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{C024A620-AFBB-421E-8D2A-2CE83699A0A8}' />
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' maximized='true' name='Users'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.072gp4g0ny4f7a1fy60171824sbi].[none:Landscape:nk]</field>
+            <field>[federated.072gp4g0ny4f7a1fy60171824sbi].[none:Username:nk]</field>
+            <field>[federated.072gp4g0ny4f7a1fy60171824sbi].[none:created_at:nk]</field>
+            <field>[federated.072gp4g0ny4f7a1fy60171824sbi].[none:created_at:qk]</field>
+            <field>[federated.072gp4g0ny4f7a1fy60171824sbi].[none:friendly_name:nk]</field>
+            <field>[federated.072gp4g0ny4f7a1fy60171824sbi].[none:landscape:nk]</field>
+            <field>[federated.072gp4g0ny4f7a1fy60171824sbi].[none:licensing_role_name:nk]</field>
+            <field>[federated.072gp4g0ny4f7a1fy60171824sbi].[none:username:nk]</field>
+            <field>[federated.072gp4g0ny4f7a1fy60171824sbi].[yr:created_at:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F905AF4A-33D2-4678-BB42-9A954F2A3839}' />
+    </window>
+  </windows>
+</workbook>
