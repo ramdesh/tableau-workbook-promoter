@@ -23,7 +23,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='localhost' name='postgres.1bwlo3d1nwvfr119j1ypa0qbbtwi'>
-            <connection authentication='username-password' class='postgres' dbname='connectanalyticsprod' one-time-sql='' port='5432' server='connectanalyticsprod-postgres.cluster-ro-cukimq938igp.us-east-1.rds.amazonaws.com' sslmode='require' username='readonly' workgroup-auth-mode='' />
+            <connection authentication='username-password' class='postgres' dbname='testdb' one-time-sql='' port='5432' server='testdb-postgres.cluster-ro-cukimq938igp.us-east-1.rds.amazonaws.com' sslmode='require' username='readonly' workgroup-auth-mode='' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.1bwlo3d1nwvfr119j1ypa0qbbtwi' name='Custom SQL Query' type='text'>select &apos;Test&apos; as &quot;Landscape&quot;, _users.name as &quot;Username&quot;, _users.friendly_name, users. created_at, _users.licensing_role_name from _users inner join users on _users.id=users.id</_.fcp.ObjectModelEncapsulateLegacy.false...relation>
